@@ -12,8 +12,6 @@
 
 ## Columnas
 
-seis
-
 Copia este bloque una vez por columna. Hoy, mínimo tres.
 
 ### nombre_de_la_columna: año
