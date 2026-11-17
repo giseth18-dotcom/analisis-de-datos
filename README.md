@@ -9,7 +9,7 @@ Equipo E__ · Análisis de Datos Básico · Estud-IA (Capa 2)
 ### 1. Usuario y decisión
 > ¿Quién usará el resultado (una persona o un área) y qué va a decidir con él?
 
-Escribe aquí.
+Mercadeo y comunicaciones
 
 ### 2. Pregunta principal
 > Una sola pregunta que ayude a tomar esa decisión.
