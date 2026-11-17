@@ -1,6 +1,6 @@
 # Nombre del proyecto
 
-Equipo E__ · Análisis de Datos Básico · Estud-IA (Capa 2)
+Equipo E6 · Análisis de Datos Básico · Estud-IA (Capa 2)
 
 > **Cómo llenar este archivo:** borra «Escribe aquí» y responde debajo de cada pregunta. Si todavía no sabes algo, escribe **PENDIENTE:** y qué te falta confirmar. No inventes datos.
 
@@ -9,17 +9,19 @@ Equipo E__ · Análisis de Datos Básico · Estud-IA (Capa 2)
 ### 1. Usuario y decisión
 > ¿Quién usará el resultado (una persona o un área) y qué va a decidir con él?
 
-Mercadeo y comunicaciones
+Mercadeo y comunicaciones del hostal Pacifico Encanto.
 
 ### 2. Pregunta principal
 > Una sola pregunta que ayude a tomar esa decisión.
 
-Escribe aquí.
+Cuál el perfil de usuario o visitante que llega en temporadas donde hay vacaciones y eventos importantes en Medellín.
 
 ### 3. Fuente de datos
 > Enlace o nombre de la fuente. ¿Es pública o es una muestra de práctica inventada (sintética)? Si es inventada, dilo aquí.
 
-Escribe aquí.
+datos.gov.co/d/96sh-4v8d
+datos.gov.co/d/gb6w-ynu4
+https://www.dane.gov.co/index.php/estadisticas-por-tema/servicios/encuesta-mensual-de-alojamiento-ema
 
 ### 4. Qué representa una fila
 > Completa la frase: «Cada fila es…». ¿Qué campo distingue una fila de otra?
