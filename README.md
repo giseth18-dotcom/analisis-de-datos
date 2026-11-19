@@ -19,24 +19,28 @@ Cuál el perfil de usuario o visitante que llega en temporadas donde hay vacacio
 ### 3. Fuente de datos
 > Enlace o nombre de la fuente. ¿Es pública o es una muestra de práctica inventada (sintética)? Si es inventada, dilo aquí.
 
-datos.gov.co/d/96sh-4v8d
-datos.gov.co/d/gb6w-ynu4
-https://www.dane.gov.co/index.php/estadisticas-por-tema/servicios/encuesta-mensual-de-alojamiento-ema
+1. https://github.com/giseth18-dotcom/analisis-de-datos/tree/main/datos/originales#:~:text=..-,7wm8%2Dw5ad.csv,-Add%20files%20via
+2. https://github.com/giseth18-dotcom/analisis-de-datos/blob/main/datos/originales/gb6w-ynu4.csv
+3. https://github.com/giseth18-dotcom/analisis-de-datos/blob/main/datos/originales/Entradas_de_extranjeros_a_Colombia_20261117.csv
 
 ### 4. Qué representa una fila
 > Completa la frase: «Cada fila es…». ¿Qué campo distingue una fila de otra?
 
-Cada fila es…
+En la fuente de datos 1, cada fila es una composición de dos campos númericos, uno de fecha y tres de texto.
+En la fuente de datos 2, cada fila es una composición de 16 campos: tres numéricos, uno de fecha  y doce de texto.
+En la fuente de datos 3, cada fila es una composición de 16 campos: seis numéricos, uno de fecha, dos de texto y uno vacío
 
 ### 5. Periodo
 > ¿Qué fechas cubren los datos?
 
-Escribe aquí.
+La fuente 1: de 2015 a 2026
+La fuente 2: solo 2025
+La fuente 3: de 2012 a 2026
 
 ### 6. Cuatro indicadores
 > Nombre de cada indicador y, si ya puedes, cómo se calcula (qué se divide entre qué).
 
-1. 
+1. PENDIENTE
 2. 
 3. 
 4. 
@@ -44,15 +48,15 @@ Escribe aquí.
 ### 7. Fuera de alcance
 > Lo que este proyecto NO va a responder.
 
-Escribe aquí.
+Las actividades de los turistas, el prespuesto invertido en el viaje, el tiempo de estadía
 
 ## Si alcanzas hoy (para el jueves es obligatorio)
 
 ### Dos comparaciones útiles
 > Por ejemplo: por mes, por comuna, por categoría.
 
-1. 
-2. 
+1. Por mes
+2. Por temporada
 
 ### Tres riesgos de calidad
 > ¿Qué podría venir mal en los datos? ¿Qué harías si la fuente falla?
