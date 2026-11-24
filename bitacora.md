@@ -5,6 +5,7 @@ Una línea por decisión: qué decidimos y por qué. Lo más reciente arriba.
 ## Decisiones
 
 -24-11-24 · Elegimos la tabla «Bases de Datos General.csv» del MinCIT porque es solo de Medellín.
+«Entradas_de_extranjeros_a_Colombia.csv» queda para después, porque es de todo Colombia.
 
 ## Limpieza (desde la sesión 4)
 
