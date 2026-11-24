@@ -14,41 +14,37 @@ Mercadeo y comunicaciones del hostal Pacifico Encanto.
 ### 2. Pregunta principal
 > Una sola pregunta que ayude a tomar esa decisión.
 
-Cuál el perfil de usuario o visitante que llega en temporadas donde hay vacaciones y eventos importantes en Medellín.
+¿De qué países de residencia vienen los extranjeros que llegan a Medellín en temporadas de vacaciones y eventos, y en qué se diferencian del resto del año?
 
 ### 3. Fuente de datos
 > Enlace o nombre de la fuente. ¿Es pública o es una muestra de práctica inventada (sintética)? Si es inventada, dilo aquí.
 
-1. https://github.com/giseth18-dotcom/analisis-de-datos/tree/main/datos/originales#:~:text=..-,7wm8%2Dw5ad.csv,-Add%20files%20via
-2. https://github.com/giseth18-dotcom/analisis-de-datos/blob/main/datos/originales/gb6w-ynu4.csv
-3. https://github.com/giseth18-dotcom/analisis-de-datos/blob/main/datos/originales/Entradas_de_extranjeros_a_Colombia_20261117.csv
+1. https://github.com/giseth18-dotcom/analisis-de-datos/blob/main/datos/originales/Bases%20de%20Datos%20General.csv
+
+Fuente: MinCIT · Extranjeros no residentes	Enlace: datos.gov.co/d/7wm8-w5ad
 
 ### 4. Qué representa una fila
 > Completa la frase: «Cada fila es…». ¿Qué campo distingue una fila de otra?
 
-En la fuente de datos 1, cada fila es una composición de dos campos númericos, uno de fecha y tres de texto.
-En la fuente de datos 2, cada fila es una composición de 16 campos: tres numéricos, uno de fecha  y doce de texto.
-En la fuente de datos 3, cada fila es una composición de 16 campos: seis numéricos, uno de fecha, dos de texto y uno vacío
+La cantidad de extranjeros no residentes que llegaron a Medellín desde un país en un mes de un año. La distingue la combinación año + mes + país. Hay 16.037 filas y 6 columnas.
 
 ### 5. Periodo
 > ¿Qué fechas cubren los datos?
 
-La fuente 1: de 2015 a 2026
-La fuente 2: solo 2025
-La fuente 3: de 2012 a 2026
+De enero de 2015 a junio de 2026. El año 2026 está incompleto.
 
 ### 6. Cuatro indicadores
 > Nombre de cada indicador y, si ya puedes, cómo se calcula (qué se divide entre qué).
 
-1. PENDIENTE
-2. 
-3. 
-4. 
+1. Participación por país = llegadas del país ÷ llegadas totales × 100. Estados Unidos tiene el 34,8 %.
+2. Índice de temporada del mes = llegadas del mes ÷ promedio mensual del año. Julio de 2025 da 1,20 y septiembre da 0,88.
+3. Variación anual = (llegadas del año − año anterior) ÷ año anterior × 100. 2025 frente a 2024 da +9,1 %.
+4. Peso de la temporada alta = llegadas en julio, agosto, diciembre y enero ÷ llegadas del año × 100. En 2025 da 37,3 %. Si todos los meses pesaran igual, esos 4 meses serían el 33,3 %, así que la temporada sí atrae más visitantes.
 
 ### 7. Fuera de alcance
 > Lo que este proyecto NO va a responder.
 
-Las actividades de los turistas, el prespuesto invertido en el viaje, el tiempo de estadía
+Actividades, presupuesto, tiempo de estadía, edad, sexo, motivo del viaje y tipo de alojamiento. La base no trae esas columnas.
 
 ## Si alcanzas hoy (para el jueves es obligatorio)
 
@@ -57,13 +53,14 @@ Las actividades de los turistas, el prespuesto invertido en el viaje, el tiempo 
 
 1. Por mes
 2. Por temporada
+   frente al resto del año, separando por país.
 
 ### Tres riesgos de calidad
 > ¿Qué podría venir mal en los datos? ¿Qué harías si la fuente falla?
 
-1. 
-2. 
-3. 
+1. Años incompletos o atípicos. 2026 llega solo hasta junio y 2020 cae casi a cero por la pandemia. Qué haré: comparar solo años completos y mostrar 2020 y 2021 aparte.
+2. Filas mal clasificadas. Hay una fila con departamento «Sin Especificar» que repite a EE. UU. en mayo de 2015, 6 filas con país «Sin Especificar» y «San Martin» escrito de dos formas. Qué haré: anotarlo en la bitácora y corregirlo en una copia en datos/limpios/, sin tocar el original.
+3. La base no mide justo lo que preguntamos, o la fuente desaparece. País de residencia no es nacionalidad, y no sabemos si se hospedaron en Medellín. Qué haré: hablar siempre de «país de residencia» y guardar la copia con su fecha y enlace.
 
 ### Mapa de preguntas
 - ¿Qué pasó?
