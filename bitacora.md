@@ -4,7 +4,7 @@ Una línea por decisión: qué decidimos y por qué. Lo más reciente arriba.
 
 ## Decisiones
 
-- AAAA-MM-DD · Decisión · Por qué
+-24-11-24 · Elegimos la tabla «Bases de Datos General.csv» del MinCIT porque es solo de Medellín.
 
 ## Limpieza (desde la sesión 4)
 
