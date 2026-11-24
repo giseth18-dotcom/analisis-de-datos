@@ -9,12 +9,14 @@ Equipo E6 · Análisis de Datos Básico · Estud-IA (Capa 2)
 ### 1. Usuario y decisión
 > ¿Quién usará el resultado (una persona o un área) y qué va a decidir con él?
 
-Mercadeo y comunicaciones del hostal Pacifico Encanto.
+Mercadeo decide a qué países dirigir campañas y en qué meses lanzar promociones.
 
 ### 2. Pregunta principal
 > Una sola pregunta que ayude a tomar esa decisión.
 
-¿De qué países de residencia vienen los extranjeros que llegan a Medellín en temporadas de vacaciones y eventos, y en qué se diferencian del resto del año?
+¿De qué países de residencia vienen los extranjeros que llegan a Medellín en las temporadas de vacaciones y eventos, y en qué se diferencian del resto del año?
+
+Columnas con las que describimos el perfil del visitante: solo tres. paisoeeresidencia dice de dónde viene, y mes y a_o dicen cuándo llega. Las columnas departamento y ciudad siempre dicen Antioquia y Medellín, así que no sirven para diferenciar visitantes. La base no trae edad, sexo ni motivo del viaje.
 
 ### 3. Fuente de datos
 > Enlace o nombre de la fuente. ¿Es pública o es una muestra de práctica inventada (sintética)? Si es inventada, dilo aquí.
@@ -27,6 +29,15 @@ Fuente: MinCIT · Extranjeros no residentes	Enlace: datos.gov.co/d/7wm8-w5ad
 > Completa la frase: «Cada fila es…». ¿Qué campo distingue una fila de otra?
 
 La cantidad de extranjeros no residentes que llegaron a Medellín desde un país en un mes de un año. La distingue la combinación año + mes + país. Hay 16.037 filas y 6 columnas.
+
+Una fila no es una persona. Es un país en un mes de un año, y cant_extranjeros_no_residentes dice cuántas personas llegaron.
+
+Peso de la temporada alta: llegadas en los meses de temporada alta ÷ llegadas totales del año × 100.
+
+Temporada alta: julio, agosto, noviembre y diciembre. Son los meses que superan el promedio en el índice de temporada de 2015 a 2025, sin contar 2020 y 2021 por la pandemia: diciembre 1,24, julio 1,18, agosto 1,13 y noviembre 1,10.
+Temporada baja: septiembre y octubre.
+Quién la define: el equipo, con el índice de temporada y el calendario de eventos de Medellín. Mercadeo del hostal la valida.
+Ejemplo: en 2025 la temporada alta suma el 37,2 % de las llegadas del año. Si todos los meses pesaran igual, 4 meses serían el 33,3 %.
 
 ### 5. Periodo
 > ¿Qué fechas cubren los datos?
@@ -51,9 +62,8 @@ Actividades, presupuesto, tiempo de estadía, edad, sexo, motivo del viaje y tip
 ### Dos comparaciones útiles
 > Por ejemplo: por mes, por comuna, por categoría.
 
-1. Por mes
-2. Por temporada
-   frente al resto del año, separando por país.
+1. Por mes: cuántos visitantes llegan cada mes, usando el índice de temporada.
+2. Por temporada: la temporada alta (julio, agosto, noviembre y diciembre) frente a la temporada baja (septiembre y octubre), y dentro de cada una, de qué países vienen.
 
 ### Tres riesgos de calidad
 > ¿Qué podría venir mal en los datos? ¿Qué harías si la fuente falla?
